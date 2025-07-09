@@ -15,7 +15,8 @@ async function getUsernames(req, res) {
 
 // Controller to render a simple HTML form
 function createUsernameGet(req, res) {
-  res.sendFile(__dirname + "/../views/form.html");
+  const path = require("path");
+  res.sendFile(path.resolve(__dirname, "../views/form.html"));
 }
 
 // Controller to handle form submission and save username
