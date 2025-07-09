@@ -1,12 +1,16 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+const userRoutes = require("./routes/userRoutes");
 require("dotenv").config();
 
-const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+// Middleware to parse form data
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Use user routes
+app.use("/", userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
