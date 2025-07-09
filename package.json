@@ -1,0 +1,24 @@
+{
+  "name": "top-user",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaimanBrujo/top-user.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaimanBrujo/top-user/issues"
+  },
+  "homepage": "https://github.com/CaimanBrujo/top-user#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
